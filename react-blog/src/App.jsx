@@ -1,20 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Header from './assets/header'
-import { ButtonWork } from './assets/header'
-import ToDO from './Todo'
 
-function App() {
-  const [count, setCount] = useState(0)
+import { useState } from "react";
+import Counter from "./coiunter";
 
-  return (
+function App(){
+  const [Fruit , setFruit] = useState("Apple");
+
+  function handleFruit(){
+    setFruit("banana")
+  }
+
+  return(
     <>
-      {/* <Header /> */}
-     
-     <ToDO/>
+    <div>
 
+      <h1>State in React JS</h1>
+
+      <h1>{Fruit}</h1>
+
+      <button onClick={handleFruit}> change fruit </button>
+
+      <Counter/>
+    </div>
     
     </>
   )

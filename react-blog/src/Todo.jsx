@@ -3,6 +3,11 @@ function ToDO(){
     function clickAlert(){
       alert("yes we noticed you click ")
     }
+
+
+    const banana = (name)=>{
+      alert (name);
+    }
     return(
         <div>
             <h1>About Images</h1>
@@ -12,6 +17,12 @@ function ToDO(){
             <h3>It was  a awesome pic to see</h3>
             <h3>Roaming around the world to see</h3>
               <button onClick={clickAlert}>Click here to see</button>
+
+                            <button onClick={()=>banana("orange")}>Fruit </button>
+
+
+
+              {/* this requires the defination of the function it will call itself thats why we dont use the () with this   */}
 
         </div>
 
